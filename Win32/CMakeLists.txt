@@ -79,4 +79,4 @@ add_executable(${PROJECT_NAME} ${SRCS})
 target_link_libraries(${PROJECT_NAME} ${LIBS})
 
 #CMakeで設定されている全ての変数を出力する
-DumpCMakeVariables()
+#DumpCMakeVariables()
