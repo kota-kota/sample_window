@@ -10,9 +10,6 @@ function(DumpCMakeVariables)
 	message(STATUS "*** dump end ***")
 endfunction()
 
-#ビルドタイプ(Debug or Release)
-set(CMAKE_BUILD_TYPE Debug)
-
 #プロジェクト名
 set(PROJECT_NAME "Win32")
 project(${PROJECT_NAME})

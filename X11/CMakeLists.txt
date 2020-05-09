@@ -10,9 +10,6 @@ function(DumpCMakeVariables)
 	message(STATUS "*** dump end ***")
 endfunction()
 
-#ビルドタイプ(Debug or Release)
-set(CMAKE_BUILD_TYPE Debug)
-
 #プロジェクト名
 set(PROJECT_NAME "X11")
 project(${PROJECT_NAME})
@@ -44,6 +41,9 @@ message(STATUS "* GNUCXX: ${CMAKE_COMPILER_IS_GNUCXX}")
 if(NOT (CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX))
 	message(FATAL_ERROR "Compiler is NOT GNUCC or GNUCXX")
 endif()
+
+#ビルドタイプ(Debug or Release)
+set(CMAKE_BUILD_TYPE Debug)
 
 #コンパイルオプションの設定
 enable_language(CXX)
